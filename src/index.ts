@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import * as ZapparThree from '@zappar/zappar-threejs';
-import targetImage1 from '../assets/two-targets/target1.zpt';
-import targetImage2 from '../assets/two-targets/target2.zpt';
+
+const targetImage1 = new URL('../assets/two-targets/target1.zpt', import.meta.url).href;
+const targetImage2 = new URL('../assets/two-targets/target2.zpt', import.meta.url).href;
 // ZapparThree provides a LoadingManager that shows a progress bar while
 // the assets are downloaded
 const manager = new ZapparThree.LoadingManager();
